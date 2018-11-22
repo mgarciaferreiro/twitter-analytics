@@ -10,10 +10,10 @@ import twitter
 
 def oauth_login():
     
-    CONSUMER_KEY = "0rT72yTC7BBlYQEBg0McfY4a9"
-    CONSUMER_SECRET = "Fa3c9sl2CFZlpx9nKlvcFgyC1KBL7FXSOovX8nv5XGJSmYHYfd"
-    OAUTH_TOKEN = "918270670982860801-aS6iKtxCL8DUJNMGRTj3BJfPf3vs3m9"
-    OAUTH_TOKEN_SECRET = "8SrXgXCAaSAj5yhs1x37KdD3c0AqJwLTIMKoNBq7R3vPy"
+    CONSUMER_KEY = "insert your own key"
+    CONSUMER_SECRET = "insert your own key"
+    OAUTH_TOKEN = "insert your own key"
+    OAUTH_TOKEN_SECRET = "insert your own key"
     
     auth = twitter.oauth.OAuth(OAUTH_TOKEN, OAUTH_TOKEN_SECRET,
                                CONSUMER_KEY, CONSUMER_SECRET)
