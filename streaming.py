@@ -56,25 +56,8 @@ class MyStreamListener(tweepy.StreamListener):
                 return False
             return True
         except:
-            # @TODO: Very dangerous, come back to this!
             pass
         
     def on_error(self, status):
         print(status)
   
-    
-#if __name__ == "__main__":
-#    auth = tweepy.OAuthHandler(cons_tok, cons_sec)
-#    auth.set_access_token(app_tok, app_sec)
-#    api = tweepy.API(auth)
-#    L = []
-#    myStreamListener = MyStreamListener(num_tweets_to_grab=300)
-#    myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener)
-#    myStream.sample()
-#    L = list(map(langs.get, L))
-#    print(Counter(L))
-#    counts = Counter(L)
-#    plt.pie([float(v) for v in counts.values()], labels=[str(k) for k in counts.keys()], autopct='%1.1f%%',
-#        shadow=True, startangle=90)
-#    plt.axis("equal") # Equal aspect ratio ensures that pie is drawn as a circle.
-#    plt.show()
